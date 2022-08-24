@@ -1,4 +1,5 @@
 ---
+import AppContainer from "../components/AppContainer.svelte";
 import "../styles/global.css";
 ---
 
@@ -11,6 +12,10 @@ import "../styles/global.css";
 		<title>Vim keybindings</title>
 	</head>
 	<body>
-		<h1>Vim keybindings</h1>
+		<div class="flex flex-col items-center p-5">
+			<h1>Vim keybindings</h1>
+			<p>Keybinding references made by Ken using Astro</p>
+		</div>
+		<AppContainer client:idle />
 	</body>
 </html>
