@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        inter: "Inter, 'Segoe UI', sans-serif",
+        inter: "'Inter host', 'Segoe UI', sans-serif",
       },
     },
   },
