@@ -1,5 +1,6 @@
 ---
 import AppContainer from "../components/AppContainer.svelte";
+import keybindingArray from "../data/application";
 import "../styles/global.css";
 ---
 
@@ -16,6 +17,6 @@ import "../styles/global.css";
 			<h1>Vim keybindings</h1>
 			<p>Keybinding references made by Ken using Astro</p>
 		</div>
-		<AppContainer client:idle />
+		<AppContainer client:idle keybindingArray={keybindingArray} />
 	</body>
 </html>
