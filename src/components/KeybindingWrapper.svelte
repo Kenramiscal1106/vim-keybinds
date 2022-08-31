@@ -1,8 +1,18 @@
-<script>
-  export let keybind;
+<script lang="ts">
+  import type { KeybindObj } from "../types";
+
+  export let keybind: KeybindObj;
 </script>
 
-<div>
-  {keybind.key}
-  {keybind.meaning}
-</div>
+<tr class=" ">
+  <th class="px-4 py-2">
+    <code class="bg-neutral-600 rounded-sm px-2">
+      {keybind.key}
+    </code>
+  </th>
+  <td>
+    <div>
+      {keybind.meaning}
+    </div>
+  </td>
+</tr>
